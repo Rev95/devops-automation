@@ -37,7 +37,7 @@ public class OrderServiceTests {
         Order result = orderService.fetchOrder(orderId);
 
         // Assert
-        assertNull(result);
+        assertNotNull(result);
         assertEquals(orderId, result.getOrderId());
         assertEquals("2023-12-11", result.getOrderDate());
         assertEquals("500", result.getTotalAmount());
