@@ -5,5 +5,5 @@ spring:
     name: spring-boot-app
   data:
     mongodb:
-      uri: mongodb://localhost:27000
+      uri: mongodb://localhost:27017
       database: test

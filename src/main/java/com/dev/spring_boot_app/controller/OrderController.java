@@ -15,6 +15,11 @@ public class OrderController {
         this.orderService = orderService;
     }
 
+    @GetMapping(path = "/hello")
+    public String getHello() {
+        return "Hello from Spring-Boot-App";
+    }
+
     @GetMapping(path="/orders")
     public ResponseEntity<Order> getOrder(@Validated @RequestParam String orderId) {
         System.out.println("Get request for orderId: " + orderId);
