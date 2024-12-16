@@ -8,6 +8,8 @@ public class SpringBootAppApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(SpringBootAppApplication.class, args);
+		System.out.println("*********** Environment Variables:");
+		System.getenv().forEach((key, value) -> System.out.println(key + " = " + value));
 	}
 
 }

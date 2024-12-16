@@ -5,5 +5,7 @@ spring:
     name: spring-boot-app
   data:
     mongodb:
-      uri: mongodb://localhost:27017
+      uri: ${CONFIG_MONGODB_SERVER}
+      username: ${CONFIG_MONGODB_ADMINUSERNAME}
+      password: ${CONFIG_MONGODB_ADMINPASSWORD}
       database: test
