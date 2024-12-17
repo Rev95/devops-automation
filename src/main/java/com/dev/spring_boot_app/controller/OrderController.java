@@ -17,7 +17,7 @@ public class OrderController {
 
     @GetMapping(path = "/hello")
     public String getHello() {
-        return "Hello from Spring-Boot-App";
+        return "Hello from Spring-Boot-App - v1";
     }
 
     @GetMapping(path="/orders")

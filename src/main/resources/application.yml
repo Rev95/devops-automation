@@ -5,7 +5,8 @@ spring:
     name: spring-boot-app
   data:
     mongodb:
-      uri: "mongodb://${MONGODB_SERVICE_SERVICE_HOST:localhost}:${MONGODB_SERVICE_SERVICE_PORT:27017}"
-      username: ${CONFIG_MONGODB_ADMINUSERNAME:user}
-      password: ${CONFIG_MONGODB_ADMINPASSWORD:passwd}
-      database: test
+      uri: "mongodb://${CONFIG_MONGODB_ADMINUSERNAME:admin}:${CONFIG_MONGODB_ADMINPASSWORD:admin}@${MONGODB_SERVICE_SERVICE_HOST:localhost}:${MONGODB_SERVICE_SERVICE_PORT:27017}/test"
+#      uri: "mongodb://${MONGODB_SERVICE_SERVICE_HOST:localhost}:${MONGODB_SERVICE_SERVICE_PORT:27017}"
+#      username: ${CONFIG_MONGODB_ADMINUSERNAME:user}
+#      password: ${CONFIG_MONGODB_ADMINPASSWORD:passwd}
+#      database: test
