@@ -5,7 +5,7 @@ metadata:
   labels:
     app: spring-boot-app
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: spring-boot-app
@@ -44,7 +44,7 @@ metadata:
 spec:
   selector:
     app: spring-boot-app
-  type: LoadBalancer
+  type: NodePort
   ports:
     - protocol: TCP
       port: 8083
